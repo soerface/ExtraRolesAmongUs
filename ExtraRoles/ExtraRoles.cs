@@ -181,13 +181,14 @@ namespace ExtraRolesMod
         public static double DistLocalClosest;
         public static GameObject shieldIndicator = null;
         public static SpriteRenderer shieldRenderer = null;
-        public static string versionString = "v1.4.3b+joker-abilities-v1";
+        public static string versionString = "v1.4.3b+detective";
 
         public class ModdedPalette
         {
             public Color medicColor = new Color(36f / 255f, 183f / 255f, 32f / 255f, 1);
             public Color officerColor = new Color(0, 40f / 255f, 198f / 255f, 1);
             public Color engineerColor = new Color(255f / 255f, 165f / 255f, 10f / 255f, 1);
+            public Color detectiveColor = new Color(153f / 255f, 111f / 255f, 63f / 255f, 1);
             public Color jokerColor = new Color(138f / 255f, 138f / 255f, 138f / 255f, 1);
             public Color protectedColor = new Color(0, 1, 1, 1);
         }
@@ -212,11 +213,13 @@ namespace ExtraRolesMod
             public float OfficerCD { get; set; }
             public bool showOfficer { get; set; }
             public bool showEngineer { get; set; }
+            public bool showDetective { get; set; }
             public bool showJoker { get; set; }
             public bool jokerCanDieToOfficer { get; set; }
             public float medicSpawnChance { get; set; }
             public float engineerSpawnChance { get; set; }
             public float officerSpawnChance { get; set; }
+            public float detectiveSpawnChance { get; set; }
             public float jokerSpawnChance { get; set; }
             public bool jokerCanVent { get; set; }
             public bool jokerCanSeeImpostors { get; set; }
@@ -233,11 +236,13 @@ namespace ExtraRolesMod
                 this.showOfficer = HarmonyMain.showOfficer.GetValue();
                 this.OfficerCD = HarmonyMain.OfficerKillCooldown.GetValue();
                 this.showEngineer = HarmonyMain.showEngineer.GetValue();
+                this.showDetective = HarmonyMain.showDetective.GetValue();
                 this.showJoker = HarmonyMain.showJoker.GetValue();
                 this.jokerCanDieToOfficer = HarmonyMain.jokerCanDieToOfficer.GetValue();
                 this.medicSpawnChance = HarmonyMain.medicSpawnChance.GetValue();
                 this.engineerSpawnChance = HarmonyMain.engineerSpawnChance.GetValue();
                 this.officerSpawnChance = HarmonyMain.officerSpawnChance.GetValue();
+                this.detectiveSpawnChance = HarmonyMain.detectiveSpawnChance.GetValue();
                 this.jokerSpawnChance = HarmonyMain.jokerSpawnChance.GetValue();
                 this.jokerCanVent = HarmonyMain.jokerCanVent.GetValue();
                 this.jokerCanSeeImpostors = HarmonyMain.jokerCanSeeImpostors.GetValue();

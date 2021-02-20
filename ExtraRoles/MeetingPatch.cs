@@ -65,6 +65,8 @@ namespace ExtraRoles
                         __result = ExileController.Instance.Field_10.PlayerName + " was The Engineer.";
                     else if (ExileController.Instance.Field_10.Object.isPlayerRole("Officer"))
                         __result = ExileController.Instance.Field_10.PlayerName + " was The Officer.";
+                    else if (ExileController.Instance.Field_10.Object.isPlayerRole("Detective"))
+                        __result = ExileController.Instance.Field_10.PlayerName + " was The Detective.";
                     else if (ExileController.Instance.Field_10.Object.isPlayerRole("Joker"))
                         __result = ExileController.Instance.Field_10.PlayerName + " was The Joker.";
                     else

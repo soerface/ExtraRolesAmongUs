@@ -53,7 +53,8 @@ namespace ExtraRolesMod
         ResetVaribles = 51,
         SetLocalPlayers = 56,
         JokerWin = 57,
-        AttemptSound = 58
+        AttemptSound = 58,
+        SetDetective = 59,
     }
 
     [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.HandleRpc))]
@@ -130,6 +131,9 @@ namespace ExtraRolesMod
                     break;
                 case (byte) CustomRPC.SetEngineer:
                     setRole("Engineer");
+                    break;
+                case (byte) CustomRPC.SetDetective:
+                    setRole("Detective");
                     break;
                 case (byte) CustomRPC.SetJoker:
                     setRole("Joker");
