@@ -33,6 +33,7 @@ namespace ExtraRolesMod
             System.Console.WriteLine(HarmonyMain.medicSpawnChance.GetValue());
             System.Console.WriteLine(HarmonyMain.officerSpawnChance.GetValue());
             System.Console.WriteLine(HarmonyMain.engineerSpawnChance.GetValue());
+            System.Console.WriteLine(HarmonyMain.sandmanSpawnChance.GetValue());
             System.Console.WriteLine(HarmonyMain.jokerSpawnChance.GetValue());
 
             var roles = new List<(string roleName, float spawnChance, CustomRPC rpc)>()
@@ -40,6 +41,7 @@ namespace ExtraRolesMod
                 ("Medic", HarmonyMain.medicSpawnChance.GetValue(), CustomRPC.SetMedic),
                 ("Officer", HarmonyMain.officerSpawnChance.GetValue(), CustomRPC.SetOfficer),
                 ("Engineer", HarmonyMain.engineerSpawnChance.GetValue(), CustomRPC.SetEngineer),
+                ("Sandman", HarmonyMain.sandmanSpawnChance.GetValue(), CustomRPC.SetSandman),
                 ("Joker", HarmonyMain.jokerSpawnChance.GetValue(), CustomRPC.SetJoker),
             };
 

@@ -64,7 +64,7 @@ namespace ExtraRolesMod
         {
             static void Postfix(ref GameOptionsMenu __instance)
             {
-                __instance.GetComponentInParent<Scroller>().YBounds.max = 15.5f;
+                __instance.GetComponentInParent<Scroller>().YBounds.max = 16.5f;
             }
         }
     }
@@ -160,6 +160,7 @@ namespace ExtraRolesMod
                 ("Medic", Main.Palette.medicColor, Main.Config.showMedic),
                 ("Officer", Main.Palette.officerColor, Main.Config.showOfficer),
                 ("Engineer", Main.Palette.engineerColor, Main.Config.showEngineer),
+                ("Sandman", Main.Palette.sandmanColor, Main.Config.showSandman),
                 ("Joker", Main.Palette.jokerColor, Main.Config.showJoker),
             };
 

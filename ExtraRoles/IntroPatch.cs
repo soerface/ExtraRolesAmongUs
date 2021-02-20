@@ -51,6 +51,15 @@ namespace ExtraRolesMod
                 return;
             }
 
+            if (PlayerControl.LocalPlayer.isPlayerRole("Sandman"))
+            {
+                __instance.__this.Title.Text = "Sandman";
+                __instance.__this.Title.Color = Main.Palette.sandmanColor;
+                __instance.__this.ImpostorText.Text = "Blind the impostor";
+                __instance.__this.BackgroundBar.material.color = Main.Palette.sandmanColor;
+                return;
+            }
+            
             if (PlayerControl.LocalPlayer.isPlayerRole("Joker"))
             {
                 __instance.__this.Title.Text = "Joker";
